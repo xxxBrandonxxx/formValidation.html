@@ -12,28 +12,31 @@
 
 <body>
     <form>
-        <Div id="heading">Registration Form</Div>
-        <div class="content">
-
-
+        <span id="heading">
+            <h1>Registration Form</h1>
+        </span>
+        <span class="content">
             <label for="user id">User id:</label>
-            <input name="User id" required><br>
-
-
+            <input name="User_id" required placeholder="Required, length of 5 to 12 characters">
+            <br>
+        </span>
+        <span>
             <label>Password:</label>
-            <input type="Password" required><br>
-
-
+            <input type="Password" required placeholder="Required, length of 7 to 12 characters">
+            <br>
+        </span>
+        <span>
             <label>Name:</label>
-            <input name="Name" required><br>
-
-
-            <label>Adress:</label>
-            <input type="Adress" required><br>
-
-
+            <input name="Name" required placeholder="Required, letters only">
+            <br>
+        </span>
+        <span>
+            <label>Address:</label>
+            <input type="Address" placeholder="optional">
+        </span>
+        <span>
             <label>Country:</label>
-            <select id="country" required name="country">
+            <select id="country" required placeholder="Required" name="country">
                 <option>select country</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>
@@ -171,7 +174,7 @@
                 <option value="MG">Madagascar</option>
                 <option value="MW">Malawi</option>
                 <option value="MY">Malaysia</option>
-                <option value="MV">Maldives</option>
+                <option value="MV">Malspanes</option>
                 <option value="ML">Mali</option>
                 <option value="MT">Malta</option>
                 <option value="MH">Marshall Islands</option>
@@ -288,43 +291,41 @@
                 <option value="ZM">Zambia</option>
                 <option value="ZW">Zimbabwe</option>
             </select>
-
-
+        </span>
+        <span>
             <label>ZIP Code:</label>
-            <input name="ZIP Code" inputmode="numeric" required>
-
-
+            <input name="ZIP Code" inputmode="numeric" required placeholder="required numeric, only">
+        </span>
+        <span>
             <label>E-mail:</label>
-            <input type="Email" size="20" required>
-
-
+            <input type="Email" size="20" required placeholder="Required valid E-mail Address only">
+        </span>
+        <span>
             <label>Sex:</label>
             <label>
-                <input type="radio" name="country" value="RSA" checked><span>Male
+                <input type="radio" name="Sex" value="Male" checked required placeholder="Required">
+                <span>
+                    Male
+                    <input type="radio" name="Sex" value="Female" required placeholder="Required">
+                    <span>
+                        Female
             </label>
-
+        </span>
+        <span>
             <label>
-                <input type="radio" name="country" value="UK"><span>Female
-            </label>
-
-
-            <label>Language:</label>
-
-            <input type="checkbox" name="Language" value="English"> English
-
-            <input type="checkbox" name="Language" value="Non English"> Non English
-
-
-            <label>About:</label>
-            <textarea rows="3" cols="20" placeholder="About:">
-              </textarea required><br>
-           
-
-           
-
-             <input type="submit" value="submit">
-        </Div>    
+                Language:
+            </label required>
+            <input type="checkbox" name="Language" value="English">
+            English
+            <input type="checkbox" name="Language" value="Non English">
+            Non English
+        </span>
+        <label>About:</label>
+        <textarea rows="3" cols="20" placeholder="Optional:"></textarea>
+        <br>
+        <input type="submit" value="submit">
+        </span>
     </form>
-    
 </body>
+
 </html>
