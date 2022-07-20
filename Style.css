@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+body {
+  margin: 0;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: flexbox;
+  margin: 1rem;
+  padding: 1.5rem;
+  justify-content: center;
+  align-content: center;
+}
+
+select,
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid grey;
+  text-align: justify;
+}
+
+.content {
+  justify-content: center;
+  display: block;
+}
+input:focus {
+  outline: 0;
+  border: 1px solid blue;
+}
+
+label:focus-within {
+  color: blue;
+}
