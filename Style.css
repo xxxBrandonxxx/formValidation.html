@@ -1,53 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+form.form-example {
+  display: table;
 }
 
-#heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-body {
-  margin: 0;
-  padding: 0.5rem;
-  font-family: sans-serif;
-  display: flex;
+div.form-example {
+  display: table-row;
   justify-content: center;
   align-items: center;
 }
 
-
-select,
-input {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid rgb(0, 0, 0);
-  text-align: justify;
-}
-
-.content {
-  justify-content: center;
-  display: block;
-}
-input:focus {
-  outline: 0;
-  border: 1px solid blue;
-}
-
-label:focus-within {
-  color: blue;
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
 }
 
 label {
-  display: block;
-  margin: 1rem 0;
-  padding: 0.2rem;
-  background: rgba(255, 255, 255, 0.952);
+  padding-right: 10px;
 }
-

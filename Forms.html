@@ -6,35 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="results" href="Reslts.html">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="Stylee.css">
     <title>Registration Form</title>
 </head>
 
 <body>
-    <form>
-        <span id="heading">
-            <h1>Registration Form</h1>
-        </span>
-        <span class="content">
-            <label for="user id">User id:</label>
-            <input name="User_id" required placeholder="Required, length of 5 to 12 characters">
-            <br>
-        </span>
-        <span>
-            <label>Password:</label>
-            <input type="Password" required placeholder="Required, length of 7 to 12 characters">
-            <br>
-        </span>
-        <span>
+    <form class="form-example"></form>
+    >
+    <Div id="heading">
+        <h1>Registration Form</h1>
+    </Div>
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+            <label for="name">User Id:</label>
+            <input type="text" name="name" id="name" required placeholder="Required length of 5 to 12 characters">
+        </div>
+        <div class="form-example">
+            <label for="email">Password:</label>
+            <input type="password" name="email" id="email" required placeholder="Required length of 7 to 12 characters">
+        </Div>
+        <Div class="form-example">
             <label>Name:</label>
             <input name="Name" required placeholder="Required, letters only">
-            <br>
-        </span>
-        <span>
+        </Div>
+        <Div class="form-example">
             <label>Address:</label>
             <input type="Address" placeholder="optional">
-        </span>
-        <span>
+        </Div>
+        <Div class="form-example">
             <label>Country:</label>
             <select id="country" required placeholder="Required" name="country">
                 <option>select country</option>
@@ -174,7 +173,7 @@
                 <option value="MG">Madagascar</option>
                 <option value="MW">Malawi</option>
                 <option value="MY">Malaysia</option>
-                <option value="MV">Malspanes</option>
+                <option value="MV">MalDives</option>
                 <option value="ML">Mali</option>
                 <option value="MT">Malta</option>
                 <option value="MH">Marshall Islands</option>
@@ -291,40 +290,47 @@
                 <option value="ZM">Zambia</option>
                 <option value="ZW">Zimbabwe</option>
             </select>
-        </span>
-        <span>
+        </Div>
+        <Div class="form-example">
             <label>ZIP Code:</label>
             <input name="ZIP Code" inputmode="numeric" required placeholder="required numeric, only">
-        </span>
-        <span>
+        </Div>
+        <Div class="form-example">
             <label>E-mail:</label>
             <input type="Email" size="20" required placeholder="Required valid E-mail Address only">
+        </Div>
+        <Div class="form-example"></Div>
+        <label>Sex:</label>
+        <span>
+            <input type="radio" name="Sex" value="Male" checked required placeholder="Required">
+            male
         </span>
         <span>
-            <label>Sex:</label>
-            <label>
-                <input type="radio" name="Sex" value="Male" checked required placeholder="Required">
-                <span>
-                    Male
-                    <input type="radio" name="Sex" value="Female" required placeholder="Required">
-                    <span>
-                        Female
-            </label>
+            <input type="radio" name="Sex" value="Female" required placeholder="Required">
+            Female
         </span>
+        <Div class="form-example"></Div>
+        <label>Language:</label>
         <span>
-            <label>
-                Language:
-            </label required>
-            <input type="checkbox" name="Language" value="English">
+
+            <input type="checkbox" name="Language" value="English" checked required placeholder="Required">
             English
-            <input type="checkbox" name="Language" value="Non English">
+        </span>
+        <span>
+            <input type="checkbox" name="Language" value="Non English" required placeholder="Required">
             Non English
         </span>
-        <label>About:</label>
-        <textarea rows="3" cols="20" placeholder="Optional:"></textarea>
-        <br>
-        <input type="submit" value="submit">
-        </span>
+        </div>
+        <div class="form-example">
+            <label>About:</label>
+            <textarea rows="3" cols="20" placeholder="Optional:"></textarea>
+        </div>
+        <div class="submit">
+            <input type="submit" value="submit" id="submit">
+        </div>
+        </Div>
+
+
     </form>
 </body>
 
